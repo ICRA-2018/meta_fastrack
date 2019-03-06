@@ -1,0 +1,16 @@
+name: meta-fastrack
+
+base:
+  ubuntu: 16.04
+  ros: kinetic-ros-base
+
+build: catkin_make
+
+source:
+  - name: crazyflie_clean
+    repo: https://github.com/HJReachability/crazyflie_clean.git
+    build: catkin_make
+    depends:
+      - libeigen3-dev
+      - libgtest-dev
+
