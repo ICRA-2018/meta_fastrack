@@ -13,4 +13,5 @@ source:
     depends:
       - libeigen3-dev
       - libgtest-dev
+      - libusb-1.0-0-dev
 

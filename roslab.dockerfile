@@ -78,6 +78,7 @@ RUN apt-get -o Acquire::ForceIPv4=true update \
  && apt-get -o Acquire::ForceIPv4=true install -yq --no-install-recommends \
     libeigen3-dev \
     libgtest-dev \
+    libusb-1.0-0-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
